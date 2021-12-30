@@ -19,3 +19,9 @@ uvicorn main:app --reload
 ```
 pytest . -v
 ```
+
+# Deploy
+
+- Setup account on Deta
+- Install tools: `iwr https://get.deta.dev/cli.ps1 -useb | iex`
+- Run `deta deploy`

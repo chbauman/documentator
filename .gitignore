@@ -5,3 +5,4 @@ test/temp
 *.db
 .pytest_cache
 **/__pycache__
+.deta
