@@ -57,7 +57,7 @@ def create_test_user(client: TestClient = None):
     res = client.post("/users/", json.dumps(test_user))
     assert (
         res.status_code == 200
-    ), f"Creating user failed: {res.status_code}, {res.text}"
+    ), f"Creating user failed: {res.status_code}, {res.json()}"
     return res.json()
 
 
